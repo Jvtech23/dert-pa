@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>DERT UI</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="jmv.jpg" alt="">
+            </div>
+
+            <span class="logo_name">JMV</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dahsboard</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">About the device</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Settings</span>
+                </a></li>
+                <!-- <li><a href="#">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">Like</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Comment</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">Share</span>
+                </a></li>
+            </ul>
+             -->
+            <!-- <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li> -->
+
+                <li class="mode">
+                    <a href="#">
+                        <!-- <i class="uil uil-moon"></i> -->
+                    <span class="link-name"></span>
+                </a>
+
+                <div class="mode-toggle">
+                  <!-- <span class="switch"></span> -->
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <!-- <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here..."> -->
+                <h2>DIGITAL EARTH RESISTANCE TESTER</h2>
+            </div>
+            
+            <img src="userji.png" alt="">
+        </div>
+
+        <!-- <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>    
+            </div>
+        </div> -->
+                <div class="boxes">
+                    <div class="box1">
+                    
+                        <span class="text">Devices</span>
+                    
+                    </div>
+                    <div class="box2">
+                        
+                        <span class="text">Frequent Failures</span>
+                    
+                    </div>
+                    <div class="box3">
+                  
+                        <span class="text">History</span>
+                     
+                    </div>
+                    <div class="box4">
+                     
+                        <span class="text">Overall Statistics</span>
+                       
+                    </div>
+                </div>
+            
+<div class="main-row2">
+        <div class="container">
+            <div class="low">Low</div>
+            <div class="medium">Medium</div>
+            <div class="high">High</div>
+    
+      </div>    
+<div class="pie">
+      <div class="main">
+        <div class="overlay">
+            <div class="label"></div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="main-row3">
+    <div class="select-device">
+        <p>Select Device:</p>
+        <select id="device-select">
+            <option value="device1">Device 1</option>
+            <option value="device2">Device 2</option>
+            <option value="device3">Device 3</option>
+            <option value="device3">No Device Selected</option>
+        </select>
+    </div>
+
+<div class="main5">
+<div class="main-row4">
+    <div class="line1">
+        <div class="range">
+            <span class="start">10Ω</span>
+            <span class="end"></span>
+        </div>
+        <div class="sensor-value">1Ω</div>
+        <a href="#" class="sensor-label">Sensor1</a>
+    </div>
+    <div class="line2">
+        <div class="range">
+            <span class="start">30Ω</span>
+            <span class="end"></span>
+        </div>
+        <div class="sensor-value">20Ω</div>
+        <a href="#" class="sensor-label">Sensor2</a>
+    </div>
+    <div class="line3">
+        <div class="range">
+            <span class="start">50Ω</span>
+            <span class="end"></span>
+        </div>
+        <div class="sensor-value">40Ω</div>
+        <a href="#" class="sensor-label">Sensor3</a>
+    </div>
+    <div class="line4">
+        <div class="range">
+            <span class="start">8Ω</span>
+            <span class="end"></span>
+        </div>
+        <div class="sensor-value">5Ω</div>
+        <a href="#" class="sensor-label">Sensor4</a>
+    </div>
+    <div class="line5">
+        <div class="range">
+            <span class="start">10Ω</span>
+            <span class="end"></span>
+        </div>
+        <div class="sensor-value">15Ω</div>
+        <a href="#" class="sensor-label">Sensor5</a>
+    </div>
+</div>   
+<div class="alarm-container">
+    <div class="header">
+        <h2>Alarm Information</h2>
+        <button id="view-btn">View</button>
+    </div>
+    <div class="alarm-info" id="alarm-info">
+     
+    </div>
+</div>
+
+</div>  
+    <script src="script.js"></script>
+</body>
+</html>
