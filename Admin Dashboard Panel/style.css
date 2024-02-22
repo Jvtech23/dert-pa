@@ -29,7 +29,7 @@
 body{
     min-height: 100vh;
     background-color: var(--primary-color);
-    background-color: #000; /* Dark black background color */
+background-color: white;
     color: #fff; 
 }
 body.dark{
@@ -45,7 +45,7 @@ body.dark{
     --title-icon-color: #CCC;
 }
 /* === Custom Scroll Bar CSS === */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 8px;
 }
 ::-webkit-scrollbar-track {
@@ -64,7 +64,7 @@ body.dark{
 body.dark::-webkit-scrollbar-thumb:hover,
 body.dark .activity-data::-webkit-scrollbar-thumb:hover{
     background: #3A3B3C;
-}
+} */
 
 nav{
     position: fixed;
@@ -211,6 +211,7 @@ body.dark .switch:before{
     background-color: var(--panel-color);
     min-height: 100vh;
     width: calc(100% - 250px);
+ 
     padding: 10px 14px;
     transition: var(--tran-05);
 }
@@ -249,13 +250,13 @@ nav.close ~ .dashboard .top{
 }
 .top .search-box input{
     position: absolute;
-    border: 1px solid var(--border-color);
-    background-color: var(--panel-color);
+    /* border: 1px solid var(--border-color);
+    background-color: var(--panel-color); */
     padding: 0 25px 0 50px;
     border-radius: 5px;
     height: 100%;
     width: 100%;
-    color: var(--text-color);
+    /* color: var(--text-color); */
     font-size: 15px;
     font-weight: 400;
     outline: none;
@@ -269,6 +270,33 @@ nav.close ~ .dashboard .top{
     transform: translateY(-50%);
     color: var(--black-light-color);
 }
+.box4 .span .span{
+    margin-top: 20px;
+
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+    
+}
+.TDevice{
+    width: 200px;
+    height: 35px;
+    background-color:  black;
+    margin-top: 105px;
+    margin-left: 25px;
+}
+
+.TAlarms{
+    width: 200px;
+    height: 35px;
+    background-color: black;
+    margin-top: 105px;
+    margin-right: 25px;
+}
+
+
 .top img{
     width: 40px;
     border-radius: 50%;
@@ -479,12 +507,26 @@ nav.close ~ .dashboard .top{
     width: 400px;
     height: 90px;
     border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     cursor: pointer;
     transition: transform 0.3s ease;
     /* justify-content: space-between;
    
     */
+    position: relative;
+}
+.low .circle {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f00; /* Adjust color as needed */
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: -15px;
+    right: -7px;
+    border: 2px solid black;
 }
 
 .low {
@@ -498,10 +540,37 @@ nav.close ~ .dashboard .top{
     background-color: #f39c12; /* Orange background color */
     margin: 50px; /* Add right margin */
 }
+.medium .circle {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f39c12; 
+    border-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: -15px;
+    right: -7px;
+    border: 2px solid black;
+}
 
 .high {
     background-color: #e74c3c; /* Red background color */
     margin: 50px; 
+}
+.high .circle {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f00; /* Adjust color as needed */
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: -15px;
+    right: -7px;
+    border: 2px solid black;
 }
 
 .pie{
@@ -517,6 +586,7 @@ nav.close ~ .dashboard .top{
     margin-right: 5px;
 
 }
+
 .main-row2{
     display: flex;
 
@@ -556,7 +626,7 @@ nav.close ~ .dashboard .top{
 
     
 .main-row3 {
-        width: 1620px;
+        width: 1600px;
         height: 370px;
         background: linear-gradient(45deg, #4CAF50, #2196F3);
         margin-left: 20px;
@@ -576,7 +646,7 @@ nav.close ~ .dashboard .top{
   
     /* width: 100px; */
     height: 50px;
-    background-color: #4CAF50;
+    background-color: #5e4caf;
     justify-content: center;
     align-items: center;
 }
@@ -607,6 +677,64 @@ nav.close ~ .dashboard .top{
 
   /* justify-content: space-between; */
 }
+/* Styles for select device container */
+.select-device {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Style for dropdown container */
+  .dropdown {
+    position: relative;
+    width: 170px
+  }
+
+  /* Style for dropdown button */
+  .dropbtn {
+    background-color: #5e4caf;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  /* Style for dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+
+  /* Style for dropdown links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Style for dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Style for dropdown container when hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Style for dropdown button when hover */
+  .dropdown:hover .dropbtn {
+    background-color: #3e468e;
+  }
 /* .main-row4 .line1{
     width: 90px;
     height: 280Px;
@@ -620,18 +748,19 @@ nav.close ~ .dashboard .top{
     background-color: white;
     position: relative;
     margin: 10px;
+    border-width: 2px;
 }
 
-.range {
+/* .range {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     text-align: center;
     font-size: 12px;
-}
+} */
 
-.range .start {
+/* .range .start {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -643,8 +772,21 @@ nav.close ~ .dashboard .top{
     top: 0;
     right: 0;
     transform: translate(50%, -50%);
+} */
+.start{
+width: 40px;
+height: 30px;
+/* border-radius: 50%; */
+background-color: none; 
+border-color: rgb(0, 0, 0);
+color: #fff;
+text-align: center;
+line-height: 30px;
+position: absolute;
+top: -42px;
+right: -7px;
+/* border: 2px solid black; */
 }
-
 .line1 .sensor-value {
     position: absolute;
     bottom: 0;
@@ -652,6 +794,7 @@ nav.close ~ .dashboard .top{
     width: 100%;
     height: 10%;
     background-color: green;
+    
 }
 .line2 {
     width: 90px;
@@ -660,30 +803,10 @@ nav.close ~ .dashboard .top{
     background-color: white;
     position: relative;
     margin: 10px;
+    border-width: 2px;
 }
 
-.range {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
-}
 
-.range .start {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(-50%, 50%);
-}
-
-.range .end {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(50%, -50%);
-}
 
 .line2 .sensor-value {
     position: absolute;
@@ -704,38 +827,18 @@ border: 1px solid black;
 background-color: white;
 position: relative;
 margin: 10px;
+border-width: 2px;
 }
 
-.range {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-text-align: center;
-font-size: 12px;
-}
-
-.range .start {
-position: absolute;
-bottom: 0;
-left: 0;
-transform: translate(-50%, 50%);
-}
-
-.range .end {
-position: absolute;
-top: 0;
-right: 0;
-transform: translate(50%, -50%);
-}
+/* */
 
 .line3 .sensor-value {
 position: absolute;
 bottom: 0;
 left: 0;
 width: 100%;
-height: 80%; /* Adjusted to cover more than half of the line */
-background-color: rgb(133, 0, 0); /* Yellow color for more than half of the line */
+height: 80%; 
+background-color: rgb(133, 0, 0); 
 display: flex;
 justify-content: center;
 align-items: center;
@@ -748,30 +851,31 @@ font-weight: bold;
     background-color: white;
     position: relative;
     margin:10px;
+    border-width: 2px;
     }
     
-    .range {
+    /* .range {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     text-align: center;
     font-size: 12px;
-    }
+    } */
     
-    .range .start {
+    /* .range .start {
     position: absolute;
     bottom: 0;
     left: 0;
     transform: translate(-50%, 50%);
-    }
+    } */
     
-    .range .end {
+    /* .range .end {
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(50%, -50%);
-    }
+    } */
     
     .line4 .sensor-value {
     position: absolute;
@@ -785,6 +889,73 @@ font-weight: bold;
     align-items: center;
     font-weight: bold;
     }
+    .below-1{
+        width: 40px;
+height: 30px;
+background-color: none; 
+border-color: rgb(0, 0, 0);
+color: #fff;
+text-align: center;
+line-height: 30px;
+position: absolute;
+top: 222px;
+right: 50px;
+
+
+    }
+    .below-2{
+        width: 40px;
+height: 30px;
+background-color: none; 
+border-color: rgb(0, 0, 0);
+color: #fff;
+text-align: center;
+line-height: 30px;
+position: absolute;
+top: 222px;
+right: 50px;
+}
+.below-3{
+    width: 40px;
+height: 30px;
+background-color: none; 
+border-color: rgb(0, 0, 0);
+color: #fff;
+text-align: center;
+line-height: 30px;
+position: absolute;
+top: 222px;
+right: 50px;
+}
+.below-4{
+    width: 40px;
+height: 30px;
+background-color: none; 
+border-color: rgb(0, 0, 0);
+color: #fff;
+text-align: center;
+line-height: 30px;
+position: absolute;
+top: 222px;
+right: 50px;
+
+
+}
+.below-5{
+    width: 40px;
+height: 30px;
+background-color: none; 
+border-color: rgb(0, 0, 0);
+color: #fff;
+text-align: center;
+line-height: 30px;
+position: absolute;
+top: 222px;
+
+right: 50px;
+
+
+}
     .line5{
         width: 90px;
         height: 200px;
@@ -792,6 +963,7 @@ font-weight: bold;
         background-color: white;
         position: relative;
         margin: 10px;
+        border-width: 2px;
         }
         
         .range {
