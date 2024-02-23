@@ -56,3 +56,27 @@ showNextAlarm();
 
 // Set up a timer to show the next alarm every 3 seconds (adjust as needed)
 const interval = setInterval(showNextAlarm, 3000);
+
+const sensorValue = document.getElementById('sensor1');
+const sensorInput = document.getElementById('sensorInput');
+
+sensorInput.addEventListener('input', function() {
+    const value = parseFloat(this.value); // Get the entered value
+    if (isNaN(value) || value < 0 || value > 10) return; // Validate the value
+    setSensorValue(value);
+});
+
+function setSensorValue(value) {
+    const percentage = (value / 10) * 100; // Calculate percentage
+    sensorValue.style.height = percentage + '%'; // Set height dynamically
+    // Adjust color based on value
+    if (value >= 1) {
+        sensorValue.style.backgroundColor = 'green';
+    } else {
+        sensorValue.style.backgroundColor = 'red';
+    }
+    sensorValue.innerText = value + 'Ω'; // Set text dynamically
+}
+
+// Initial call to set the sensor value
+setSensorValue(1); // Set the initial value to 1Ω

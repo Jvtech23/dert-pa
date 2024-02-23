@@ -278,25 +278,32 @@ nav.close ~ .dashboard .top{
     display: flex;
     justify-content: space-between;
     margin: 2px;
+  
+   
     
 }
 .TDevice{
     width: 200px;
     height: 35px;
-    background-color:  black;
+    
     margin-top: 105px;
     margin-left: 25px;
+    color: white; /* Text color */
+    font-size: 20px; /* Font size */
+    font-weight: bold;
+    
 }
 
 .TAlarms{
     width: 200px;
     height: 35px;
-    background-color: black;
     margin-top: 105px;
-    margin-right: 25px;
+    margin-left: 25px;
+    color: rgb(49, 6, 243); /* Text color */
+    font-size: 20px; /* Font size */
+    font-weight: bold;
+
 }
-
-
 .top img{
     width: 40px;
     border-radius: 50%;
@@ -343,6 +350,8 @@ nav.close ~ .dashboard .top{
     overflow: hidden; /* Hide overflowing content */
     position: relative; /* Positioning for pseudo-elements */
     margin-top: 74px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Pseudo-element for gradient overlay */
@@ -369,7 +378,11 @@ nav.close ~ .dashboard .top{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
     z-index: 1; /* Ensure text is above gradient overlay */
 }
-
+.alarm-container .header img {
+    width: 30px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Optional: Adjust margin */
+  }
     
     
 
@@ -382,6 +395,8 @@ nav.close ~ .dashboard .top{
     overflow: hidden; /* Hide overflowing content */
     position: relative; /* Positioning for pseudo-elements */
     margin-top: 74px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -419,6 +434,8 @@ nav.close ~ .dashboard .top{
     overflow: hidden; /* Hide overflowing content */
     position: relative; /* Positioning for pseudo-elements */
     margin-top: 74px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -456,6 +473,8 @@ nav.close ~ .dashboard .top{
     overflow: hidden; /* Hide overflowing content */
     position: relative; /* Positioning for pseudo-elements */
     margin-top: 74px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -487,7 +506,7 @@ nav.close ~ .dashboard .top{
 .container {
     width: 914px;
     height: 180px;
-    background: linear-gradient(45deg, #4CAF50, #2196F3); /* Multiple background colors */
+    background: none; /* Multiple background colors */
     border: 2px solid #333;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -519,7 +538,7 @@ nav.close ~ .dashboard .top{
     width: 40px;
     height: 30px;
     border-radius: 50%;
-    background-color: #f00; /* Adjust color as needed */
+    background-color:#f39c12; /* Adjust color as needed */
     color: #fff;
     text-align: center;
     line-height: 30px;
@@ -530,15 +549,21 @@ nav.close ~ .dashboard .top{
 }
 
 .low {
-    background-color: #3498db; /* Blue background color */
+    background-color: rgb(0,128,0); /* Blue background color */
     /* margin-right: 40px;  */
     margin: 50px;
     /* margin-left: 40px; */
+    color: black;
+    
+    
+    
 }
 
+
 .medium {
-    background-color: #f39c12; /* Orange background color */
+    background-color: rgb(247, 247, 65); /* Orange background color */
     margin: 50px; /* Add right margin */
+    color: black;
 }
 .medium .circle {
     width: 40px;
@@ -556,14 +581,15 @@ nav.close ~ .dashboard .top{
 }
 
 .high {
-    background-color: #e74c3c; /* Red background color */
+    background-color: rgb(223, 48, 48); /* Red background color */
     margin: 50px; 
+    color: black;
 }
 .high .circle {
     width: 40px;
     height: 30px;
     border-radius: 50%;
-    background-color: #f00; /* Adjust color as needed */
+    background-color: #f39c12; /* Adjust color as needed */
     color: #fff;
     text-align: center;
     line-height: 30px;
@@ -577,13 +603,15 @@ nav.close ~ .dashboard .top{
     float: left;
     width:690px;
     height:175px;
-    border-radius: 10px;
-    background: linear-gradient(45deg, #4CAF50, #2196F3);
-    overflow: hidden;
+    background: none;
+    /* overflow: hidden; */
     justify-content: space-between;
     margin: 20px;
     margin-top: 17px;
     margin-right: 5px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -597,10 +625,12 @@ nav.close ~ .dashboard .top{
     height: 140px;
     position: relative;
     border-radius: 50%;
-    background: conic-gradient(red 120deg, green 120deg 240deg, yellow 240deg);
+    background: conic-gradient(rgb(223, 48, 48) 120deg,   green 120deg 240deg, rgb(247, 247, 65) 240deg);
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: -89px;
     margin-left: 100px;
+   
+    border: 2px solid #333;
 }
 
 .overlay {
@@ -628,11 +658,12 @@ nav.close ~ .dashboard .top{
 .main-row3 {
         width: 1600px;
         height: 370px;
-        background: linear-gradient(45deg, #4CAF50, #2196F3);
+        background: none;
         margin-left: 20px;
         border-radius: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth effect */
         display: flex;
+        border: 2px solid #333;
         /* justify-content: center;
         align-items: center; */
     }
@@ -793,8 +824,18 @@ right: -7px;
     left: 0;
     width: 100%;
     height: 10%;
-    background-color: green;
+    background-color:rgb(0,128,0);
     
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 .line2 {
     width: 90px;
@@ -814,7 +855,7 @@ right: -7px;
     left: 0;
     width: 100%;
     height: 50%; /* Adjusted to cover more than half of the line */
-    background-color: yellow; /* Yellow color for more than half of the line */
+    background-color: rgb(247, 247, 65); /* Yellow color for more than half of the line */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -883,7 +924,7 @@ font-weight: bold;
     left: 0;
     width: 100%;
     height: 60%; /* Adjusted to cover more than half of the line */
-    background-color: rgb(211, 245, 23); /* Yellow color for more than half of the line */
+    background-color: rgb(247, 247, 65); /* Yellow color for more than half of the line */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -995,7 +1036,7 @@ right: 50px;
         left: 0;
         width: 100%;
         height: 30%; /* Adjusted to cover more than half of the line */
-        background-color: rgb(22, 133, 0); /* Yellow color for more than half of the line */
+        background-color: rgb(0,128,0); /* Yellow color for more than half of the line */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1013,8 +1054,8 @@ right: 50px;
     color: black;
     text-decoration: none; /* Remove default underline */
     padding: 4px 8px; /* Add padding for better clickability */
-    border: 1px solid #ccc; /* Add border for better visibility */
-    border-radius: 4px; /* Add border radius for rounded corners */
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
     background-color: #f0f0f0; /* Add background color */
     transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
 }
@@ -1076,6 +1117,20 @@ right: 50px;
     border-radius: 5px;
     background-color: #0c0b0b;
 }
+.pie .performance1{
+    margin-left: 500px;
+    margin-top: 40px;
+   
 
+}
+.pie .performance2{
+    margin-left: 500px;
+
+}
+.pie .performance3{
+    margin-left: 500px;
+
+}
+   
 
 
